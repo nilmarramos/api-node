@@ -1,3 +1,8 @@
-/**
- * Created by Guloseymas Mania on 11/10/2016.
- */
+'use strict';
+
+module.exports = function (app) {
+    let homeController = app.controllers.home;
+
+    app.get('/', homeController.index);
+    app.get('/contato', homeController.contact);
+}
