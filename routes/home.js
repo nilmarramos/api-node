@@ -5,4 +5,4 @@ module.exports = function (app) {
 
     app.get('/', homeController.index);
     app.get('/contato', homeController.contact);
-}
+};
